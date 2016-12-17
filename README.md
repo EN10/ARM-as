@@ -3,7 +3,7 @@
 Install (Only Once): 
 -
 Open Terminal:
-Click "+" -> New Teminal OR Alt + T
+Click "+" -> New Teminal OR Alt + T     
     sudo apt install qemu-system-arm
     sudo apt install binutils-arm-none-eabi
 
@@ -17,5 +17,5 @@ Run:
     
 Monitor:
 -
-ctrl-a c (ctrl and 'a' then 'c')
+ctrl-a c (ctrl and 'a' then 'c')    
 'info registers'
