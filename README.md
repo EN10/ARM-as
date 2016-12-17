@@ -19,4 +19,5 @@ Run:
 Monitor:
 -
 ctrl-a c (ctrl and 'a' then 'c')    
-'info registers'
+
+    info registers
