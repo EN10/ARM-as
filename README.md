@@ -4,6 +4,7 @@ Install (Only Once):
 -
 Open Terminal:  
 Click "+" -> New Teminal OR Alt + T     
+
     sudo apt install qemu-system-arm    
     sudo apt install binutils-arm-none-eabi 
 
