@@ -1,6 +1,6 @@
 #ARM Assembly#
 
-Install (Only Once): 
+Install (Only Once):    
 -
 Open Terminal:  
 Click "+" -> New Teminal OR Alt + T     
