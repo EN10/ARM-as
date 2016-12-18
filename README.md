@@ -41,6 +41,7 @@ http://filestore.aqa.org.uk/resources/computing/AQA-75162-75172-ALI.PDF
 
 Instructions Examples:  
 *   ADD 
+*   SUB
 *   AND 
 *   LSL
 *   CMP
