@@ -24,8 +24,10 @@ ctrl-a c (ctrl and 'a' then 'c')
     
 Notes on Source
 -
-Source must end with newline else:  
+@ is an arm as comment like ' in VB.NET 
+
+Source must end with newline otherwise:  
 Assembler end of file Warning  
 
-Infinite loop needed else:  
+Infinite loop needed at the end otherwise:  
 qemu: fatal: Trying to execute code outside RAM
