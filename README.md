@@ -10,11 +10,11 @@ Click "+" -> New Teminal OR Alt + T
 
 Assemble:    
 -
-    arm-none-eabi-as -o add.o add.s
+    arm-none-eabi-as add.s
 
 Run:    
 -
-    qemu-system-arm -nographic -M sx1 -kernel add.o  
+    qemu-system-arm -nographic -M sx1 -kernel a.out  
     
 Monitor:
 -
@@ -31,3 +31,6 @@ Assembler end of file Warning
 
 Infinite loop needed at the end otherwise:  
 qemu: fatal: Trying to execute code outside RAM
+
+    arm-none-eabi-as -o add.o add.s
+-o flag can be used to specify output name
