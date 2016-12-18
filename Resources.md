@@ -10,3 +10,5 @@ https://geekwentfreak-raviteja.rhcloud.com/blog/2011/01/15/compile-simple-arm-ba
 http://salmanarif.bitbucket.org/visual  
 
 http://man.cx/qemu  
+
+http://filestore.aqa.org.uk/resources/computing/AQA-75162-75172-ALI.PDF 
