@@ -24,7 +24,7 @@ ctrl-a c (ctrl and 'a' then 'c')
     
 Notes on Source
 -
-@ is an arm as single line comment like ' in VB.NET 
+@ is an arm as single line comment like ' in VB.NET     
 /*  */ is used for multiline comments like in C
 
 Source must end with newline otherwise:  
