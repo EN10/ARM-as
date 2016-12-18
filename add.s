@@ -4,3 +4,6 @@
 
 stop:   b stop               @ Infinite loop to stop execution
  
+/*
+R00=00000005 R01=00000004 R02=00000009
+*/
