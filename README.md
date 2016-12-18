@@ -21,3 +21,11 @@ Monitor:
 ctrl-a c (ctrl and 'a' then 'c')    
 
     info registers
+    
+Notes on Source
+-
+Source must end with newline else:
+Assembler end of file Warning  
+
+Infinite loop needed else:  
+qemu: fatal: Trying to execute code outside RAM
