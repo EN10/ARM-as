@@ -19,7 +19,7 @@ In QEMU Monitor:
 
     info registers
 
-**NOTES:**
+**NOTES:**  
 R15 in ARM is the PC    
 add.s example PC ends on 0x10010040     
 There are 3 instructions on width 4 (bytes)     
