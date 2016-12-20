@@ -6,36 +6,34 @@ Open Terminal:
 Click "+" -> New Teminal OR Alt + T     
 
     sudo apt install binutils-arm-none-eabi 
-    sudo apt install qemu-user  
-    sudo apt install gdb-arm-none-eabi
-Assembler, Runtime and Debugger
-Assemble & Link:    
+    sudo apt install qemu-system-arm    
+
+Assemble:    
 -
-    arm-none-eabi-as add.s -o add.o
-    arm-none-eabi-ld add.o -o add
+    arm-none-eabi-as add.s
 
 Run:    
 -
-    qemu-arm -singlestep -g 1234 add &
--singlestep run in singlestep mode  
--g port     wait gdb connection to 'port'   
-&           Run job in background   
-To stop use 'ps' for PID then use 'kill'  
-GDB:
--
-    arm-none-eabi-gdb
-    file add
-    target remote localhost:1234
-    l
+    qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
     info registers
-    stepi
-Quitting GDB will terminate QEMU     
-    
-https://www.youtube.com/watch?v=y5JmQItfFck 
-    
-Notes on Source and Registers
+
+For detailed debugging see GDB:     
+https://github.com/EN10/arm-as/blob/master/GDB.md   
+
+Notes on Source
 -
-https://github.com/EN10/arm-as/blob/master/Notes.md  
+@ is an arm as single line comment like ' in VB.NET     
+/*  */ is used for multiline comments like in C
+
+Source must end with newline otherwise:  
+Assembler end of file Warning  
+
+Infinite loop needed at the end otherwise:  
+qemu: fatal: Trying to execute code outside RAM
+
+-o flag can be used to specify output name  
+
+    arm-none-eabi-as -o add.o add.s
 
 **AQA ARM:**     
 http://filestore.aqa.org.uk/resources/computing/AQA-75162-75172-ALI.PDF 
