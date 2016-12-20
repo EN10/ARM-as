@@ -35,7 +35,7 @@ Notes:
 -
 R15 in ARM is the PC    
 add.s example PC ends on 0x10010040  
-Each instruction is 32 bits wide or 4 Bytes
+Each instruction is 32 bits wide or 4 Bytes 
 There are 3 instructions on width 4 (bytes)     
 Therefore program begins on 0x10010034      
 0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034   
