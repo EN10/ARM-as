@@ -29,7 +29,7 @@ GDB:
     l
     info registers
     stepi
-GDB will terminate QEMU     
+Quitting GDB will terminate QEMU     
     
 https://www.youtube.com/watch?v=y5JmQItfFck 
     
