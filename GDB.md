@@ -14,7 +14,7 @@ Run Binary:
 -s              shorthand for -gdb tcp::1234    
 -S              freeze CPU at startup (use 'c' to start execution)
 
-View Registers:    
+Edit Registers:    
 -
     gdb-multiarch
 
