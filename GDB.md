@@ -1,10 +1,21 @@
 #Using GDB with QEMU#
 
+Install (Only Once):    
+-
+Open Terminal:  
+Click "+" -> New Teminal OR Alt + T     
+
+    sudo apt install gdb-multiarch 
+
+Run Binary:    
+-
     qemu-system-arm -nographic -M sx1 -kernel a.out -s -S
 
 -s              shorthand for -gdb tcp::1234    
 -S              freeze CPU at startup (use 'c' to start execution)
 
+View Registers:    
+-
     gdb-multiarch
 
     set architecture arm
@@ -19,7 +30,9 @@ In QEMU Monitor:
 
     info registers
 
-**NOTES:**  
+
+Notes:    
+-
 R15 in ARM is the PC    
 add.s example PC ends on 0x10010040     
 There are 3 instructions on width 4 (bytes)     
