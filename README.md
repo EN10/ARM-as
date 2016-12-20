@@ -8,7 +8,7 @@ Click "+" -> New Teminal OR Alt + T
     sudo apt install binutils-arm-none-eabi 
     sudo apt install qemu-user  
     sudo apt install gdb-arm-none-eabi
-
+Assembler, Runtime and Debugger
 Assemble & Link:    
 -
     arm-none-eabi-as add.s -o add.o
@@ -17,7 +17,8 @@ Assemble & Link:
 Run:    
 -
     qemu-arm -singlestep -g 1234 add
-
+-singlestep     run in singlestep mode
+-g port         wait gdb connection to 'port'
 GDB:
 -
     arm-none-eabi-gdb
