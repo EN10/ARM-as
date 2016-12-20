@@ -11,10 +11,10 @@ Run Binary:
 -
     qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio  
     info registers  
--M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM 
+-M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM    
 -S              freeze CPU at startup (use 'c' to start execution)  
 -s              shorthand for -gdb tcp::1234  
--nographic      disable graphical output and redirect serial I/Os to console
+-nographic      disable graphical output and redirect serial I/Os to console    
 -monitor stdio  redirect the monitor to stdio
 
 Edit Registers:    
