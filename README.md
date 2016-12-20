@@ -21,7 +21,10 @@ Monitor:
 ctrl-a c (ctrl and 'a' then 'c')    
 
     info registers
-    
+
+For detailed debugging see GDB: 
+https://github.com/EN10/arm-as/blob/master/GDB.md   
+
 Notes on Source
 -
 @ is an arm as single line comment like ' in VB.NET     
