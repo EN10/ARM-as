@@ -9,7 +9,7 @@ Click "+" -> New Teminal OR Alt + T
     sudo apt install qemu-user  
     sudo apt install gdb-arm-none-eabi
 
-Assemble:    
+Assemble & Link:    
 -
     arm-none-eabi-as add.s -o add.o
     arm-none-eabi-ld add.o -o add
@@ -26,6 +26,8 @@ GDB:
     l
     info registers
     stepi
+    
+https://www.youtube.com/watch?v=y5JmQItfFck 
     
 Notes on Source and Registers
 -

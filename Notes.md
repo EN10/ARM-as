@@ -12,13 +12,7 @@ qemu: fatal: Trying to execute code outside RAM
 Registers
 -
 R15 in ARM is the PC    
-add.s example PC ends on 0x10010040  
 Each instruction is 32 bits wide or 4 Bytes     
-There are 3 instructions of width 4 (bytes)     
-Therefore program begins on 0x10010034      
-0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034   
-
-If -S then PC is 0x10000000
 
 By default the registers are little-endian (smallest on the right)  
 
