@@ -13,6 +13,7 @@ Run Binary:
 
 -s              shorthand for -gdb tcp::1234    
 -S              freeze CPU at startup (use 'c' to start execution)
+-M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM 
 
 Edit Registers:    
 -
@@ -40,7 +41,14 @@ There are 3 instructions on width 4 (bytes)
 Therefore program begins on 0x10010034      
 0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034   
 
+If -S then PC is 0x10000000
+
 By default the registers are little-endian (smallest on the right)  
+
+R0-R12 are general purpose  
+R13, R14, R15 & PSR are special purpose     
+R13: Stack Pointer, R14: Link Register, R15: Program Counter    
+PSR: Program Status Register    
 
 4 left most bits of the PSR register are status flags NZCV  
 * Negative
@@ -48,12 +56,6 @@ By default the registers are little-endian (smallest on the right)
 * Carry
 * oVerflow
 
-R0-R12 are general purpose  
-R13, R14, R15 & PSR are special purpose     
-R13: Stack Pointer, R14: Link Register, R15: Program Counter    
-PSR: Program Status Register    
-
 Ref:    
 https://www.ece.cmu.edu/~ee349/f-2012/lab2/qemu.pdf 
-
--M sx1  http://wiki.qemu.org/Documentation/Platforms/ARM 
+http://users.ece.utexas.edu/~valvano/EE345M/Arm_EE382N_4.pdf    
