@@ -12,7 +12,7 @@ Run Binary:
     qemu-system-arm -nographic -M sx1 -kernel a.out -s -S
 
 -s              shorthand for -gdb tcp::1234    
--S              freeze CPU at startup (use 'c' to start execution)
+-S              freeze CPU at startup (use 'c' to start execution)  
 -M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM 
 
 Edit Registers:    
@@ -37,7 +37,7 @@ Notes:
 R15 in ARM is the PC    
 add.s example PC ends on 0x10010040  
 Each instruction is 32 bits wide or 4 Bytes     
-There are 3 instructions on width 4 (bytes)     
+There are 3 instructions of width 4 (bytes)     
 Therefore program begins on 0x10010034      
 0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034   
 
@@ -57,5 +57,5 @@ PSR: Program Status Register
 * oVerflow
 
 Ref:    
-https://www.ece.cmu.edu/~ee349/f-2012/lab2/qemu.pdf 
+https://www.ece.cmu.edu/~ee349/f-2012/lab2/qemu.pdf     
 http://users.ece.utexas.edu/~valvano/EE345M/Arm_EE382N_4.pdf    
