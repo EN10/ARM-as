@@ -7,7 +7,7 @@ Click "+" -> New Teminal OR Alt + T
 
     sudo apt remove gdb gdbserver
     sudo apt install gdb-arm-none-eabi
-
+Debugger
 Run Binary:    
 -
     qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio  
