@@ -37,7 +37,15 @@ R15 in ARM is the PC
 add.s example PC ends on 0x10010040     
 There are 3 instructions on width 4 (bytes)     
 Therefore program begins on 0x10010034      
-0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034    
+0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034   
+
+By default the registers are little-endian (smallest on the right)  
+
+4 left most bits of the PSR register are status flags NZCV  
+* Negative
+* Zero
+* Carry
+* oVerflow
 
 Ref:    
 https://www.ece.cmu.edu/~ee349/f-2012/lab2/qemu.pdf 
