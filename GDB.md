@@ -28,7 +28,8 @@ Edit Registers:
     stepi
 
 In QEMU Monitor:    
-
+    
+    qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
     info registers
 
 

@@ -14,7 +14,7 @@ Assemble:
 
 Run:    
 -
-    qemu-system-arm -nographic -M sx1 -kernel a.out  
+    qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
     
 Monitor:
 -
