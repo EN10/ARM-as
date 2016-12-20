@@ -16,9 +16,11 @@ Assemble & Link:
 
 Run:    
 -
-    qemu-arm -singlestep -g 1234 add
--singlestep     run in singlestep mode  
--g port         wait gdb connection to 'port'
+    qemu-arm -singlestep -g 1234 add &
+-singlestep run in singlestep mode  
+-g port     wait gdb connection to 'port'
+&           Run job in background
+To stop use 'ps' for PID then use 'kill'  
 GDB:
 -
     arm-none-eabi-gdb
@@ -27,6 +29,7 @@ GDB:
     l
     info registers
     stepi
+GDB will terminate QEMU     
     
 https://www.youtube.com/watch?v=y5JmQItfFck 
     
