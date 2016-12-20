@@ -1,4 +1,4 @@
-#ARM Assembly#
+#ARM Bare Metal Assembly#
 
 Install (Only Once):    
 -
@@ -20,16 +20,9 @@ Run:
 For detailed debugging see GDB:     
 https://github.com/EN10/arm-as/blob/master/GDB.md   
 
-Notes on Source
+Notes on Source and Registers
 -
-@ is an arm as single line comment like ' in VB.NET     
-/*  */ is used for multiline comments like in C
-
-Source must end with newline otherwise:  
-Assembler end of file Warning  
-
-Infinite loop needed at the end otherwise:  
-qemu: fatal: Trying to execute code outside RAM
+https://github.com/EN10/arm-as/blob/master/Notes.md  
 
 -o flag can be used to specify output name  
 

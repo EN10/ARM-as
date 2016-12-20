@@ -1,31 +1,15 @@
-#Using GDB with QEMU#
-
-Install (Only Once):    
+Source
 -
-Open Terminal:  
-Click "+" -> New Teminal OR Alt + T     
+@ is an arm as single line comment like ' in VB.NET     
+/*  */ is used for multiline comments like in C
 
-    sudo apt install gdb-multiarch 
+Source must end with newline otherwise:  
+Assembler end of file Warning  
 
-Run Binary:    
--
-    qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio  
-    info registers  
--M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM    
--S              freeze CPU at startup (use 'c' to start execution)  
--s              shorthand for -gdb tcp::1234  
--nographic      disable graphical output and redirect serial I/Os to console    
--monitor stdio  redirect the monitor to stdio
+Infinite loop needed at the end otherwise:  
+qemu: fatal: Trying to execute code outside RAM
 
-Edit Registers:    
--
-    gdb-multiarch
-    set architecture arm
-    target remote localhost:1234
-    set $pc = 0x10010034
-    stepi
-
-Notes:    
+Registers
 -
 R15 in ARM is the PC    
 add.s example PC ends on 0x10010040  

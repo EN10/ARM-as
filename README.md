@@ -6,34 +6,30 @@ Open Terminal:
 Click "+" -> New Teminal OR Alt + T     
 
     sudo apt install binutils-arm-none-eabi 
-    sudo apt install qemu-system-arm    
+    sudo apt install qemu-user  
+    sudo apt install gdb-arm-none-eabi
 
 Assemble:    
 -
-    arm-none-eabi-as add.s
+    arm-none-eabi-as add.s -o add.o
+    arm-none-eabi-ld add.o -o add
 
 Run:    
 -
-    qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
-    info registers
+    qemu-arm -singlestep -g 1234 add
 
-For detailed debugging see GDB:     
-https://github.com/EN10/arm-as/blob/master/GDB.md   
-
-Notes on Source
+GDB:
 -
-@ is an arm as single line comment like ' in VB.NET     
-/*  */ is used for multiline comments like in C
-
-Source must end with newline otherwise:  
-Assembler end of file Warning  
-
-Infinite loop needed at the end otherwise:  
-qemu: fatal: Trying to execute code outside RAM
-
--o flag can be used to specify output name  
-
-    arm-none-eabi-as -o add.o add.s
+    arm-none-eabi-gdb
+    file add
+    target remote localhost:1234
+    l
+    info registers
+    stepi
+    
+Notes on Source and Registers
+-
+https://github.com/EN10/arm-as/blob/master/Notes.md  
 
 **AQA ARM:**     
 http://filestore.aqa.org.uk/resources/computing/AQA-75162-75172-ALI.PDF 
