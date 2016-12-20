@@ -47,6 +47,11 @@ By default the registers are little-endian (smallest on the right)
 * Carry
 * oVerflow
 
+R0-R12 are general purpose  
+R13, R14, R15 & PSR are special purpose     
+R13: Stack Pointer, R14: Link Register, R15: Program Counter    
+PSR: Program Status Register    
+
 Ref:    
 https://www.ece.cmu.edu/~ee349/f-2012/lab2/qemu.pdf 
 
