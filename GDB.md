@@ -22,7 +22,7 @@ Edit Registers:
 
     target remote localhost:1234
 
-    set $pc = set $pc = 0x10010034
+    set $pc = 0x10010034
 
     stepi
 
