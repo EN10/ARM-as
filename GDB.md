@@ -5,7 +5,8 @@ Install (Only Once):
 Open Terminal:  
 Click "+" -> New Teminal OR Alt + T     
 
-    sudo apt install gdb-multiarch 
+    sudo apt remove gdb gdbserver
+    sudo apt install gdb-arm-none-eabi
 
 Run Binary:    
 -
@@ -19,9 +20,10 @@ Run Binary:
 
 Edit Registers:    
 -
-    gdb-multiarch
-    set architecture arm
+    arm-none-eabi-gdb
     target remote localhost:1234
+    file a.out
+    l
     set $pc = 0x10010034
     stepi
 
