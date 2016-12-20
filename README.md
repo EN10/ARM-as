@@ -17,7 +17,7 @@ Assemble & Link:
 Run:    
 -
     qemu-arm -singlestep -g 1234 add
--singlestep     run in singlestep mode
+-singlestep     run in singlestep mode  
 -g port         wait gdb connection to 'port'
 GDB:
 -
