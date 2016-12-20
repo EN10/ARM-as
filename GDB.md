@@ -9,8 +9,7 @@ Click "+" -> New Teminal OR Alt + T
 
 Run Binary:    
 -
-    qemu-system-arm -nographic -M sx1 -kernel a.out -s -S
-
+    qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio  
 -s              shorthand for -gdb tcp::1234    
 -S              freeze CPU at startup (use 'c' to start execution)  
 -M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM 
@@ -18,20 +17,15 @@ Run Binary:
 Edit Registers:    
 -
     gdb-multiarch
-
     set architecture arm
-
     target remote localhost:1234
-
     set $pc = 0x10010034
-
     stepi
 
 In QEMU Monitor:    
     
     qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
     info registers
-
 
 Notes:    
 -
