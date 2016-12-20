@@ -15,11 +15,6 @@ Assemble:
 Run:    
 -
     qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
-    
-Monitor:
--
-ctrl-a c (ctrl and 'a' then 'c')    
-
     info registers
 
 For detailed debugging see GDB:     
