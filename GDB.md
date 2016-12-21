@@ -22,7 +22,6 @@ Edit Registers:
 -
     arm-none-eabi-gdb
     target remote localhost:1234
-    info registers
     set $pc = 0x10010034
     info registers
     x/4i $pc
