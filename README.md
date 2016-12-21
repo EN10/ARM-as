@@ -44,3 +44,4 @@ Instructions Examples:
 *   AND 
 *   LSL
 *   CMP
+*   IfElse
