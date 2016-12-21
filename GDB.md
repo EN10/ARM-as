@@ -22,11 +22,11 @@ Edit Registers:
 -
     arm-none-eabi-gdb
     target remote localhost:1234
-    x/4 $pc-12
     set $pc = 0x10010034
+    x/4i $pc+12
     stepi
-x/4 $pc-12
-Examine 4 Memory Address from current PC - 12 i.e. 3 instructions ago     
+x/4i $pc+12
+Examine 4 Instructions from current PC + 12 (Bytes) i.e. 3 instructions    
 PC ends on 0x10010040 Therefore program begins on 0x10010034      
 0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034 
 
