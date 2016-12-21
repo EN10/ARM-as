@@ -11,8 +11,7 @@ Click "+" -> New Teminal OR Alt + T
 Assembler & Runtime
 Assemble:    
 -
-    arm-none-eabi-as -g add.s
--g generate debugging information (optional, allows a.out to be loaded into gdb)
+    arm-none-eabi-as add.s
 Run:    
 -
     qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
