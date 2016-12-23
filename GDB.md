@@ -8,6 +8,8 @@ Click "+" -> New Teminal OR Alt + T
     sudo apt remove gdb gdbserver
     sudo apt install gdb-arm-none-eabi
 Debugger
+gdb uses i386 registers	
+gdb-multiarch arch must be initialised each time	
 Run Binary:    
 -
     qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio  
