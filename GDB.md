@@ -7,8 +7,8 @@ Click "+" -> New Teminal OR Alt + T
 
     sudo apt remove gdb gdbserver
     sudo apt install gdb-arm-none-eabi
-Debugger
-gdb uses i386 registers	
+Debugger	
+gdb uses i386 registers		
 gdb-multiarch arch must be initialised each time	
 Run Binary:    
 -
