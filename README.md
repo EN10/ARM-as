@@ -15,8 +15,10 @@ Assemble:
 Run:    
 -
     qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
-    info registers
+    info registers	
 
+https://en.wikipedia.org/wiki/ARM_architecture#Registers	
+	
 For detailed debugging see GDB:     
 https://github.com/EN10/arm-as/blob/master/GDB.md   
 
