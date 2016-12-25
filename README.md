@@ -16,8 +16,8 @@ Run:
 -
     qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
     info registers	
-
 https://en.wikipedia.org/wiki/ARM_architecture#Registers	
+http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0337h/Chdedegj.html
 	
 For detailed debugging see GDB:     
 https://github.com/EN10/arm-as/blob/master/GDB.md   
