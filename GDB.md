@@ -8,11 +8,14 @@ Click "+" -> New Teminal OR Alt + T
     sudo apt remove gdb gdbserver
     sudo apt install gdb-arm-none-eabi
 Debuggers:	
+-
 gdb - uses i386 registers		
 gdb-multiarch - arch must be initialised each time	
+
 Run Binary:    
 -
-    qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio  
+
+    qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio
     info registers  
 -M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM    
 -S              freeze CPU at startup (use 'c' to start execution)  
@@ -22,6 +25,8 @@ Run Binary:
 
 Edit Registers:    
 -
+In a seperate terminal to Run Binary:   
+
     arm-none-eabi-gdb
     target remote localhost:1234
     set $pc = 0x10010034
