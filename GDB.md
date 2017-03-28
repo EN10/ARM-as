@@ -9,7 +9,8 @@ Click "+" -> New Teminal OR Alt + T
     sudo apt install gdb-arm-none-eabi
 Debuggers:	
 -
-gdb - uses i386 registers		
+
+gdb - uses i386 registers       
 gdb-multiarch - arch must be initialised each time	
 
 Run Binary:    
