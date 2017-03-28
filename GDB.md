@@ -1,4 +1,4 @@
-#Using GDB with QEMU#
+# Using GDB with QEMU
 
 Install (Only Once):    
 -
