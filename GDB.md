@@ -26,7 +26,7 @@ Run Binary:
 
 Edit Registers:    
 -
-In a seperate terminal to Run Binary:   
+In a separate terminal to Run Binary:   
 
     arm-none-eabi-gdb
     target remote localhost:1234
