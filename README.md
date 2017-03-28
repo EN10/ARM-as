@@ -12,12 +12,13 @@ Assembler & Runtime
 Assemble:    
 -
     arm-none-eabi-as add.s
-Run:    
+Run:
 -
+
     qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
     info registers	
-https://en.wikipedia.org/wiki/ARM_architecture#Registers	
-https://developer.arm.com/docs/100166_0001/latest/programmers-model/processor-core-register-summary	
+https://en.wikipedia.org/wiki/ARM_architecture#Registers    
+https://developer.arm.com/docs/100166_0001/latest/programmers-model/processor-core-register-summary     
 https://developer.arm.com/docs/dui0801/latest/overview-of-aarch32-state/registers-in-aarch32-state	
 	
 For detailed debugging see GDB:     
