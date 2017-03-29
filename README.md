@@ -11,7 +11,7 @@ Click "+" -> New Teminal OR Alt + T
 Assembler & Runtime
 Assemble:    
 -
-    arm-none-eabi-as add.s
+    arm-none-eabi-as ADD.s
 Run:
 -
 
@@ -37,7 +37,7 @@ qemu: fatal: Trying to execute code outside RAM
 
 -o flag can be used to specify output name  
 
-    arm-none-eabi-as -o add.o add.s
+    arm-none-eabi-as -o ADD.o ADD.s
 
 **AQA ARM:**     
 http://filestore.aqa.org.uk/resources/computing/AQA-75162-75172-ALI.PDF 
