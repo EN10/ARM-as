@@ -17,23 +17,36 @@ Run Binary:
 -
 
     qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio
-    info registers  
+    
 -M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM    
 -S              freeze CPU at startup (use 'c' to start execution)  
 -s              shorthand for -gdb tcp::1234  
 -nographic      disable graphical output and redirect serial I/Os to console    
--monitor stdio  redirect the monitor to stdio
+-monitor stdio  redirect the monitor to stdio   
+
+Inspect Registers:  
+
+    info registers  
+
 
 Edit Registers:    
 -
-In a separate terminal to Run Binary:   
+Run `qemu-system-arm` in a seprate window:     
+Run GDB:    
 
     arm-none-eabi-gdb
+Connect to running code:    
+
     target remote localhost:1234
+Set PC to beginning of ADD.s
+
     set $pc = 0x10010034
+Inspect Registers, Memory & Step through code:  
+
     info registers
     x/4i $pc
     stepi
+
 x/4i $pc
 Examine 4 Instructions from current PC + 12 (Bytes) i.e. 3 instructions    
 PC ends on 0x10010040 Therefore program begins on 0x10010034      
