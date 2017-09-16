@@ -26,7 +26,7 @@ https://github.com/EN10/arm-as/blob/master/GDB.md
 
 Notes on Source
 -
-@ is an arm as single line comment like ' in VB.NET     
+@ is an arm single line comment like ' in VB.NET     
 /*  */ is used for multiline comments like in C
 
 Source must end with newline otherwise:  
