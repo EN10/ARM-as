@@ -41,16 +41,30 @@ Connect to running code:
 Set PC to beginning of ADD.s
 
     set $pc = 0x10010034
-Inspect Registers, Memory & Step through code:  
+
+Inspect Registers   
 
     info registers
+
+View RAM
+    
     x/4i $pc
-    stepi
 
 x/4i $pc
 Examine 4 Instructions from current PC + 12 (Bytes) i.e. 3 instructions    
 PC ends on 0x10010040 Therefore program begins on 0x10010034      
 0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034 
+`x/4i $pc - 12` to see RAM at the end.
+
+Step through code:
+
+    stepi
+
+Print Register:
+
+    p $r0
+
+Print Register 0
 
 Notes:    
 -
