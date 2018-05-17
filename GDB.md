@@ -56,6 +56,10 @@ PC ends on 0x10010040 Therefore program begins on 0x10010034
 0x10010040 - 12 (3 lines x 4 bytes) = 0x10010034    
 `x/4i $pc - 12` to see RAM at the end.
 
+    x/4w $pc
+
+View instructions in HEX
+
 Step through code:
 
     stepi
