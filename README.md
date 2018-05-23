@@ -24,7 +24,9 @@ View all Registers:
 Examine 4 RAM Address from:
 
     x /4i  0x10010034
-    
+
+Program Usually Starts on 0x10010034
+
 https://en.wikipedia.org/wiki/ARM_architecture#Registers    
 https://developer.arm.com/docs/100166_0001/latest/programmers-model/processor-core-register-summary     
 https://developer.arm.com/docs/dui0801/latest/overview-of-aarch32-state/registers-in-aarch32-state	
