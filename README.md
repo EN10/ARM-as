@@ -12,8 +12,9 @@ Assembler & Runtime
 Assemble:    
 -
     arm-none-eabi-as ADD.s
-    
+
 `none` refers to baremetal, i.e. no operating system
+
 Run:
 -
 
