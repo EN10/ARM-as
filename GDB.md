@@ -7,6 +7,11 @@ Click "+" -> New Teminal OR Alt + T
 
     sudo apt remove gdb gdbserver
     sudo apt install gdb-arm-none-eabi
+    
+On GDB 8.1:
+
+    sudo apt install gdb-multiarch
+    
 Debuggers:	
 -
 
