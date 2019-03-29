@@ -3,25 +3,18 @@
 Install (Only Once):    
 -
 Open Terminal:  
-Click "+" -> New Teminal OR Alt + T     
+
+    sudo apt install gdb-multiarch
+
+if gdb - uses i386 registers:
 
     sudo apt remove gdb gdbserver
     sudo apt install gdb-arm-none-eabi
     
-On GDB 8.1:
-
-    sudo apt install gdb-multiarch
-    
-Debuggers:	
--
-
-gdb - uses i386 registers       
-gdb-multiarch - arch must be initialised each time	
-
 Run Binary:    
 -
 
-    qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -monitor stdio
+    qemu-system-arm -M sx1 -S -kernel a.out -s -nographic -serial pty
     
 -M sx1          http://wiki.qemu.org/Documentation/Platforms/ARM    
 -S              freeze CPU at startup (use 'c' to start execution)  
