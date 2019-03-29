@@ -2,12 +2,10 @@
 
 Install (Only Once):    
 -
-Open Terminal:  
-Click "+" -> New Teminal OR Alt + T     
 
-    sudo apt update
-    sudo apt install binutils-arm-none-eabi 
-    sudo apt install qemu-system-arm    
+    apt install binutils-arm-none-eabi 
+    apt install qemu-system-arm    
+
 Assembler & Runtime
 Assemble:    
 -
