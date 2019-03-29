@@ -19,6 +19,11 @@ Run:
 -
 
     qemu-system-arm -M sx1 -kernel a.out -nographic -monitor stdio  
+
+In this Error `could not connect serial device to character backend 'stdio'
+` Use:
+
+    qemu-system-arm -M sx1 -kernel a.out -nographic -serial pty
     
 View all Registers:
 
