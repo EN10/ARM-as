@@ -3,8 +3,8 @@
 Install (Only Once):    
 -
 
-    apt install binutils-arm-none-eabi 
-    apt install qemu-system-arm    
+    sudo apt install binutils-arm-none-eabi 
+    sudo apt install qemu-system-arm    
 
 Assembler & Runtime
 Assemble:    
