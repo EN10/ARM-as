@@ -33,6 +33,10 @@ Run `qemu-system-arm` in a seprate window:
 Run GDB:    
 
     arm-none-eabi-gdb
+or  
+
+    gdb-multiarch   
+    
 Connect to running code:    
 
     target remote localhost:1234
