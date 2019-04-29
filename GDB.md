@@ -32,10 +32,11 @@ Edit Registers:
 Run `qemu-system-arm` in a seprate window:     
 Run GDB:    
 
-    arm-none-eabi-gdb
+    gdb-multiarch
+
 or  
 
-    gdb-multiarch   
+    arm-none-eabi-gdb
     
 Connect to running code:    
 
