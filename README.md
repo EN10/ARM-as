@@ -9,7 +9,7 @@ Install (Only Once):
 Assembler & Runtime
 Assemble:    
 -
-    arm-none-eabi-as ADD.s
+    arm-none-eabi-as add.s
 
 `none` refers to baremetal, i.e. no operating system
 
