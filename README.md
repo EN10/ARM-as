@@ -29,6 +29,7 @@ Examine 4 RAM Address from:
 Program Usually Starts on 0x10010034
 
 To quit QEMU:
+-
 
     (qemu) q
 
